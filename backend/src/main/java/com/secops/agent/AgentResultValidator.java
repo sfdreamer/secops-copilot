@@ -12,7 +12,7 @@ public class AgentResultValidator {
     public record Result(String verdict,String summary,String attackType,String riskLevel,String reasoningSummary,
         List<AIAnalysis.Evidence> evidence,List<String> recommendations,List<String> uncertainties,String validationStatus,String executionMode) {
         public Result fallback() {
-            var gaps=new ArrayList<>(uncertainties); addGap(gaps,"Function Calling 未启用，未查询工具，仅依据已有告警和规则研判。");
+            var gaps=new ArrayList<>(uncertainties); addGap(gaps,"本次未查询工具（Function Calling 不可用，或事件缺少可绑定的来源 IP / 目标资产），仅依据已有告警与规则研判。");
             return new Result(verdict,summary,attackType,riskLevel,reasoningSummary,evidence,recommendations,List.copyOf(gaps),validationStatus,"NO_TOOL_FALLBACK");
         }
     }

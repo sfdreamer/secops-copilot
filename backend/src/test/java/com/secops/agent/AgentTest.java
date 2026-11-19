@@ -53,6 +53,20 @@ class AgentTest {
         var result=run(agent(llm,new ReadOnlyTools(mapper),3000,30000),traces);
         assertEquals("NO_TOOL_FALLBACK",result.executionMode()); assertFalse(result.uncertainties().isEmpty()); assertTrue(traces.isEmpty());
     }
+    @Test void missingTargetAssetSkipsToolsAndFallsBack() throws Exception {
+        Instant t=Instant.parse("2026-11-18T02:22:00Z");
+        incident=new Incident("I2","SSH_BRUTE_FORCE","AUTHENTICATION","203.0.113.21",null,null,
+            t,t,List.of("A"),1,incident.features(),incident.riskAssessment(),
+            AnalysisStatus.NOT_STARTED,IncidentStatus.PENDING_ANALYSIS,t,t);
+        boolean[] toolsEnabled={true};
+        LlmAdapter llm=(turns,enabled) -> { toolsEnabled[0]=enabled; return new Reply(JSON,List.of()); };
+        var traces=new ArrayList<ToolCallTrace>();
+        var result=run(agent(llm,new ReadOnlyTools(mapper),3000,30000),traces);
+        assertFalse(toolsEnabled[0],"缺少 targetAsset 时不应向模型注册工具");
+        assertEquals("NO_TOOL_FALLBACK",result.executionMode());
+        assertTrue(traces.isEmpty());
+        assertTrue(result.uncertainties().stream().anyMatch(u -> u.contains("未查询工具")));
+    }
     @Test void realFixtureToolThroughMockLlmAndEvidence() throws Exception {
         LlmAdapter llm=(turns,enabled) -> {
             if(turns.size()==2) return new Reply("",List.of(call("c")));

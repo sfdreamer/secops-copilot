@@ -46,7 +46,7 @@
 
 | 工作目录 | 命令 | 结果 |
 |---|---|---|
-| backend | `mvn -B test` | **71/71 通过**，0 失败 / 0 错误 / 0 跳过（含授权运维工具边界测试） |
+| backend | `mvn -B test` | **72/72 通过**，0 失败 / 0 错误 / 0 跳过（含缺失工具绑定字段降级与授权运维工具边界测试） |
 | backend | `mvn -B -Dtest=DashScopeLiveIT test` | **连跑 3 次全部通过**（29.96s / 23.06s / 31.54s）；真实 Function Calling + 证据校验，产出 `VALID` / `TOOL_ENABLED` 结果；31.54s 那次在旧 30s 上限下必然失败 |
 | frontend | `npm run build` | **通过**（`vue-tsc --noEmit` + `vite build`）；主 chunk 约 2.23 MB，仍有大 chunk 警告 |
 | 根目录 | `docker compose config -q` | 通过；`eclipse-temurin:17-jre-jammy` 实测自带 curl / wget，两个 healthcheck 可用 |
@@ -78,7 +78,7 @@
 ## 七、本次最终审查整改复测（2026-11-19）
 
 - P1 授权运维只读工具已按 `API.md` 14.2 实现，参数绑定当前事件资产和时间窗口，只返回 `APPROVED` / `COMPLETED` 且时间相交的记录；返回时间统一为 UTC。Prompt 升级为 `ssh-triage-v4`，上下文新增从告警提取的用户名集合，不读取 Ground Truth。
-- 最新 Docker 镜像重建并替换旧 `qwen-plus` 服务；两容器 healthy，运行模型为 `Qwen/Qwen3-30B-A3B-Instruct-2507`。`mvn -B test` 为 71/71，`npm run build` 通过。
+- 最新 Docker 镜像重建并替换旧 `qwen-plus` 服务；两容器 healthy，运行模型为 `Qwen/Qwen3-30B-A3B-Instruct-2507`。`mvn -B test` 为 72/72，`npm run build` 通过。
 - 真实 HTTP 研判同一授权运维事件：第一次在两项工具成功后模型读取异常，返回 503；第二次重试成功，报告 `LIKELY_BENIGN` / `VALID`，两项工具轨迹均 `SUCCESS`。浏览器提交 `FALSE_POSITIVE` 后，事件状态和审核记录同步更新。现场演示仍需预检，不保证模型服务每次可用。
 - 演示脚本改为根据本次实际轨迹讲解，不保证模型在任意事件必定调用工具。未修改或删除原始 fixtures。
 

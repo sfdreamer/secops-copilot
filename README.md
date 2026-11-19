@@ -18,7 +18,7 @@ SOC 多类型安全告警智能研判 Demo。将重复的 SSH 暴力破解告警
 
 | 工具 | 使用方式 | 效果 |
 |---|---|---|
-| OpenAI Codex（阶段一至三） | 以 `AGENTS.md` + 四份设计文档为硬约束，按「先输出实施计划与冲突 → 分阶段生成 → 每阶段 `mvn test` / `npm run build` 校验 → 人工逐文件复核」推进；不擅自扩大范围、不重写基线 | 交付后端主干：统一 Alert 接入与去重、SSH 聚合 / 特征 / 规则评分、有界 ReAct Agent、只读工具白名单、结构化输出与证据校验、人工审核；71 项自动化测试（均为 Mock LLM / 模拟 HTTP 层） |
+| OpenAI Codex（阶段一至三） | 以 `AGENTS.md` + 四份设计文档为硬约束，按「先输出实施计划与冲突 → 分阶段生成 → 每阶段 `mvn test` / `npm run build` 校验 → 人工逐文件复核」推进；不擅自扩大范围、不重写基线 | 交付后端主干：统一 Alert 接入与去重、SSH 聚合 / 特征 / 规则评分、有界 ReAct Agent、只读工具白名单、结构化输出与证据校验、人工审核；72 项自动化测试（均为 Mock LLM / 模拟 HTTP 层） |
 | WorkBuddy（阶段四及交付前审查） | 会话式生成前端页面与后端接口、Docker 单机部署、界面长截图；本次按题目 + 四份文档逐模块只读审查，再按审查结论整改并复跑构建测试；用脱敏探测定位密钥归属（`/v1/models` 返回 200），实测三个候选模型的 Function Calling 与严格 JSON 输出后选型，新增 OpenAI 兼容适配层 | 5 个业务页面、`/api/alerts` `/api/dashboard` `/api/evaluation` 三组接口、Docker Compose 两容器、6 张 1440 宽截图、演示脚本、进度文档同步、评估指标诚实化与评估模块测试；**真实模型闭环从 401 失败变为可验证通过** |
 
 共同约束：不引入 MySQL / Redis / MQ / Multi-Agent / 权限系统；`scenarioId` 与 Ground Truth 只在评估模块可见；模型密钥仅由后端环境变量读取。**AI 只辅助实现，不改变文档基线；所有结论以实际执行的测试与运行产物为准，不把 Mock 或静态数据说成真实模型调用。**
@@ -61,7 +61,7 @@ SOC 多类型安全告警智能研判 Demo。将重复的 SSH 暴力破解告警
 
 | 命令 | 结果 |
 |---|---|
-| `mvn -B test`（backend） | **71/71 通过**，0 失败 / 0 错误 / 0 跳过；含授权运维工具边界测试及 5 项 `EvaluationServiceTest`，均为 Mock LLM / MockMvc / 模拟 HTTP 层 |
+| `mvn -B test`（backend） | **72/72 通过**，0 失败 / 0 错误 / 0 跳过；含缺失工具绑定字段降级、授权运维工具边界及 5 项 `EvaluationServiceTest`，均为 Mock LLM / MockMvc / 模拟 HTTP 层 |
 | `mvn -B -Dtest=DashScopeLiveIT test`（backend） | **连跑 3 次全部通过**（29.96s / 23.06s / 31.54s）。真实硅基流动 `Qwen/Qwen3-30B-A3B-Instruct-2507` 普通调用 + Function Calling；产出 `backend/target/dashscope-live-result.json`：`validationStatus=VALID`、`executionMode=TOOL_ENABLED`、工具轨迹 `SUCCESS`，证据含 ALERT + TOOL 两类 |
 | `npm run build`（frontend） | **通过**（`vue-tsc --noEmit` + `vite build`）；主 chunk 约 2.23 MB，仍有大 chunk 警告 |
 | `docker compose config -q` | 通过；`eclipse-temurin:17-jre-jammy` 实测自带 curl / wget，两个 healthcheck 可用 |

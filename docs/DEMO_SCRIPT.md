@@ -113,7 +113,7 @@ docker compose up -d --build   # http://localhost:8080
 | AI 到底跑通没有？ | **跑通了。** 代码链路（Adapter → 有界 ReAct → 白名单工具 → 结构/证据校验 → 落库）完整；密钥属于硅基流动 / 轨迹流动 OpenAI 兼容平台，已新增 `OpenAiCompatibleAdapter`，模型选 `Qwen/Qwen3-30B-A3B-Instruct-2507`。独立集成测试 `DashScopeLiveIT` 通过，产出 `dashscope-live-result.json`：`validationStatus=VALID`、`executionMode=TOOL_ENABLED`、工具轨迹 `SUCCESS`，证据含 ALERT + TOOL 两类。现场点研判可复现。 |
 | 为什么之前是 401？ | 之前把密钥当 DashScope 原生密钥用，中国大陆与国际两个 endpoint 都返回 `invalid_api_key`；脱敏探测发现该密钥在硅基流动 `/v1/models` 返回 200，属于**平台/协议不匹配**，不是密钥坏。 |
 | 为什么选 Qwen3-30B？ | 实测三个候选模型的 Function Calling 与「工具结果回填后输出严格 JSON」：两个 Qwen 都干净，`deepseek-ai/DeepSeek-V3.2` 会用 ```json 代码块包裹输出，会被 `AgentResultValidator` 判无效；Qwen3 MoE 响应更快，故选它，Qwen2.5-72B 备选。 |
-| 那些测试算什么？ | `mvn test` 的 71 项是单元测试 / MockMvc / Mock LLM / 模拟 HTTP 协议测试；`DashScopeLiveIT` 以 `IT` 结尾，不在默认执行范围，需单独 `mvn -Dtest=DashScopeLiveIT test`。本次还实际通过 HTTP 触发了模型和工具，并在浏览器提交审核；两类验证不混算。 |
+| 那些测试算什么？ | `mvn test` 的 72 项是单元测试 / MockMvc / Mock LLM / 模拟 HTTP 协议测试；`DashScopeLiveIT` 以 `IT` 结尾，不在默认执行范围，需单独 `mvn -Dtest=DashScopeLiveIT test`。本次还实际通过 HTTP 触发了模型和工具，并在浏览器提交审核；两类验证不混算。 |
 | 为什么 `/api/health` 说模型已配置？ | `modelConfigured` 只表示环境变量存在，不代表密钥有效或模型当前可用，README 与页面都有说明。 |
 | 评估页为什么这么多 `null`？ | 按 PRD 6 口径，没有有效样本、没有人工计时、没有人工抽样就返回空 / 未测量；引用可追溯率因过滤前引用数未持久化，返回「不可计算」，不用硬编码准确率填充。 |
 | 数据哪来的？ | `scripts/generate_fixtures.py` 按场景模板可复现生成（非随机），125 条告警 / 6 资产 / 12 历史登录 / 3 授权运维 / 8 条 Ground Truth；IP 全用文档示例地址段，纯虚构。 |

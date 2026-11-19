@@ -27,7 +27,10 @@ public class SocTriageAgent {
         long deadline=System.nanoTime()+timeout*1_000_000;
         try {
             List<Turn> turns=new ArrayList<>(List.of(Turn.text("system",prompt),Turn.text("user",mapper.writeValueAsString(context))));
-            int rounds=0; boolean fallback=false; Set<String> callIds=new HashSet<>();
+            int rounds=0; Set<String> callIds=new HashSet<>();
+            // 缺少来源 IP 或目标资产时，工具参数无法绑定到当前事件，调用必然被拒绝；
+            // 直接以无工具模式研判，避免产生无意义的 REJECTED 轨迹与空参数摘要。
+            boolean fallback = i.sourceIp()==null || i.targetAsset()==null;
             while(true) {
                 boolean enabled=!fallback && rounds<maxRounds && traces.size()<maxCalls;
                 List<Turn> snapshot=List.copyOf(turns);
