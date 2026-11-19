@@ -14,3 +14,6 @@ cloudflared/*.pem
 .DS_Store
 *.class
 *.tsbuildinfo
+
+# 交付压缩包（给上传系统用，非源码；每次重打包都会产生无意义二进制 diff）
+*复试作品*.zip
