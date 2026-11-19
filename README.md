@@ -161,24 +161,8 @@ cd frontend && npm install && npm run dev   # http://localhost:5173
 
 ---
 
-## 8. 10–15 分钟演示安排
-
-| 时间 | 内容 |
-|---|---|
-| 0–2 min | 背景与「帮助谁 / 解决什么」 |
-| 2–3 min | 系统状态与模型配置 |
-| 3–5 min | 态势总览：125 告警 / 13 事件 / 风险分布 |
-| 5–8 min | 告警与事件双 Tab、SSH 聚合效果、未支持策略不生成研判 |
-| 8–10 min | 事件详情：特征网格、规则评分与命中明细 |
-| 10–12.5 min | 触发 Agent 研判：真实工具调用、`SUCCESS` 轨迹、结构化报告与证据引用 |
-| 12.5–14 min | 人工审核、记录追加与状态流转 |
-| 14–15 min | 效果评估页与「如何判断方案有效」 |
-
----
-
 ## 附：更多资料
 
-- `docs/DEMO_SCRIPT.md` —— 逐分钟演示话术、常见问题与断网兜底路线
 - `docs/DEV_PROGRESS.md` —— 分阶段开发过程与验收记录
 - `docs/PRD.md` / `ARCHITECTURE.md` / `DATABASE.md` / `API.md` —— 产品设计基线 V1.3
 - `screenshots/` —— 6 张界面截图
