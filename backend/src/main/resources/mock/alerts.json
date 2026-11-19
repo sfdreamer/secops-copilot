@@ -1,0 +1,2176 @@
+[
+  {
+    "alertId": "ALERT-0001",
+    "scenarioId": "SCENARIO-SSH-001",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:00:00+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "root",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for root from 203.0.113.10 port 50000 ssh2",
+    "sourceIp": "203.0.113.10"
+  },
+  {
+    "alertId": "ALERT-0002",
+    "scenarioId": "SCENARIO-SSH-001",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:00:09+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "admin",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for admin from 203.0.113.10 port 50001 ssh2",
+    "sourceIp": "203.0.113.10"
+  },
+  {
+    "alertId": "ALERT-0003",
+    "scenarioId": "SCENARIO-SSH-001",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:00:19+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "test",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for test from 203.0.113.10 port 50002 ssh2",
+    "sourceIp": "203.0.113.10"
+  },
+  {
+    "alertId": "ALERT-0004",
+    "scenarioId": "SCENARIO-SSH-001",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:00:28+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "guest",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for guest from 203.0.113.10 port 50003 ssh2",
+    "sourceIp": "203.0.113.10"
+  },
+  {
+    "alertId": "ALERT-0005",
+    "scenarioId": "SCENARIO-SSH-001",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:00:37+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "oracle",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for oracle from 203.0.113.10 port 50004 ssh2",
+    "sourceIp": "203.0.113.10"
+  },
+  {
+    "alertId": "ALERT-0006",
+    "scenarioId": "SCENARIO-SSH-001",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:00:47+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "postgres",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for postgres from 203.0.113.10 port 50005 ssh2",
+    "sourceIp": "203.0.113.10"
+  },
+  {
+    "alertId": "ALERT-0007",
+    "scenarioId": "SCENARIO-SSH-001",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:00:56+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "deploy",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for deploy from 203.0.113.10 port 50006 ssh2",
+    "sourceIp": "203.0.113.10"
+  },
+  {
+    "alertId": "ALERT-0008",
+    "scenarioId": "SCENARIO-SSH-001",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:01:05+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "backup",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for backup from 203.0.113.10 port 50007 ssh2",
+    "sourceIp": "203.0.113.10"
+  },
+  {
+    "alertId": "ALERT-0009",
+    "scenarioId": "SCENARIO-SSH-001",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:01:15+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "root",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for root from 203.0.113.10 port 50008 ssh2",
+    "sourceIp": "203.0.113.10"
+  },
+  {
+    "alertId": "ALERT-0010",
+    "scenarioId": "SCENARIO-SSH-001",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:01:24+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "admin",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for admin from 203.0.113.10 port 50009 ssh2",
+    "sourceIp": "203.0.113.10"
+  },
+  {
+    "alertId": "ALERT-0011",
+    "scenarioId": "SCENARIO-SSH-001",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:01:34+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "test",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for test from 203.0.113.10 port 50010 ssh2",
+    "sourceIp": "203.0.113.10"
+  },
+  {
+    "alertId": "ALERT-0012",
+    "scenarioId": "SCENARIO-SSH-001",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:01:43+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "guest",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for guest from 203.0.113.10 port 50011 ssh2",
+    "sourceIp": "203.0.113.10"
+  },
+  {
+    "alertId": "ALERT-0013",
+    "scenarioId": "SCENARIO-SSH-001",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:01:52+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "oracle",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for oracle from 203.0.113.10 port 50012 ssh2",
+    "sourceIp": "203.0.113.10"
+  },
+  {
+    "alertId": "ALERT-0014",
+    "scenarioId": "SCENARIO-SSH-001",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:02:02+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "postgres",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for postgres from 203.0.113.10 port 50013 ssh2",
+    "sourceIp": "203.0.113.10"
+  },
+  {
+    "alertId": "ALERT-0015",
+    "scenarioId": "SCENARIO-SSH-001",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:02:11+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "deploy",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for deploy from 203.0.113.10 port 50014 ssh2",
+    "sourceIp": "203.0.113.10"
+  },
+  {
+    "alertId": "ALERT-0016",
+    "scenarioId": "SCENARIO-SSH-001",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:02:20+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "backup",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for backup from 203.0.113.10 port 50015 ssh2",
+    "sourceIp": "203.0.113.10"
+  },
+  {
+    "alertId": "ALERT-0017",
+    "scenarioId": "SCENARIO-SSH-001",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:02:30+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "root",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for root from 203.0.113.10 port 50016 ssh2",
+    "sourceIp": "203.0.113.10"
+  },
+  {
+    "alertId": "ALERT-0018",
+    "scenarioId": "SCENARIO-SSH-001",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:02:39+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "admin",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for admin from 203.0.113.10 port 50017 ssh2",
+    "sourceIp": "203.0.113.10"
+  },
+  {
+    "alertId": "ALERT-0019",
+    "scenarioId": "SCENARIO-SSH-001",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:02:48+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "test",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for test from 203.0.113.10 port 50018 ssh2",
+    "sourceIp": "203.0.113.10"
+  },
+  {
+    "alertId": "ALERT-0020",
+    "scenarioId": "SCENARIO-SSH-001",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:02:58+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "guest",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for guest from 203.0.113.10 port 50019 ssh2",
+    "sourceIp": "203.0.113.10"
+  },
+  {
+    "alertId": "ALERT-0021",
+    "scenarioId": "SCENARIO-SSH-001",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:03:07+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "oracle",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for oracle from 203.0.113.10 port 50020 ssh2",
+    "sourceIp": "203.0.113.10"
+  },
+  {
+    "alertId": "ALERT-0022",
+    "scenarioId": "SCENARIO-SSH-001",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:03:16+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "postgres",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for postgres from 203.0.113.10 port 50021 ssh2",
+    "sourceIp": "203.0.113.10"
+  },
+  {
+    "alertId": "ALERT-0023",
+    "scenarioId": "SCENARIO-SSH-001",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:03:26+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "deploy",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for deploy from 203.0.113.10 port 50022 ssh2",
+    "sourceIp": "203.0.113.10"
+  },
+  {
+    "alertId": "ALERT-0024",
+    "scenarioId": "SCENARIO-SSH-001",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:03:35+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "backup",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for backup from 203.0.113.10 port 50023 ssh2",
+    "sourceIp": "203.0.113.10"
+  },
+  {
+    "alertId": "ALERT-0025",
+    "scenarioId": "SCENARIO-SSH-001",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:03:45+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "root",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for root from 203.0.113.10 port 50024 ssh2",
+    "sourceIp": "203.0.113.10"
+  },
+  {
+    "alertId": "ALERT-0026",
+    "scenarioId": "SCENARIO-SSH-001",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:03:54+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "admin",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for admin from 203.0.113.10 port 50025 ssh2",
+    "sourceIp": "203.0.113.10"
+  },
+  {
+    "alertId": "ALERT-0027",
+    "scenarioId": "SCENARIO-SSH-001",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:04:03+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "test",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for test from 203.0.113.10 port 50026 ssh2",
+    "sourceIp": "203.0.113.10"
+  },
+  {
+    "alertId": "ALERT-0028",
+    "scenarioId": "SCENARIO-SSH-001",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:04:13+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "guest",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for guest from 203.0.113.10 port 50027 ssh2",
+    "sourceIp": "203.0.113.10"
+  },
+  {
+    "alertId": "ALERT-0029",
+    "scenarioId": "SCENARIO-SSH-001",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:04:22+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "oracle",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for oracle from 203.0.113.10 port 50028 ssh2",
+    "sourceIp": "203.0.113.10"
+  },
+  {
+    "alertId": "ALERT-0030",
+    "scenarioId": "SCENARIO-SSH-001",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:04:31+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "postgres",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for postgres from 203.0.113.10 port 50029 ssh2",
+    "sourceIp": "203.0.113.10"
+  },
+  {
+    "alertId": "ALERT-0031",
+    "scenarioId": "SCENARIO-SSH-001",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:04:41+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "deploy",
+      "action": "LOGIN_SUCCESS"
+    },
+    "rawLog": "Accepted password for deploy from 203.0.113.10 port 50030 ssh2",
+    "sourceIp": "203.0.113.10"
+  },
+  {
+    "alertId": "ALERT-0032",
+    "scenarioId": "SCENARIO-SSH-001",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:04:50+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "backup",
+      "action": "LOGIN_SUCCESS"
+    },
+    "rawLog": "Accepted password for backup from 203.0.113.10 port 50031 ssh2",
+    "sourceIp": "203.0.113.10"
+  },
+  {
+    "alertId": "ALERT-0033",
+    "scenarioId": "SCENARIO-SSH-002",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:10:00+08:00",
+    "targetIp": "10.0.0.11",
+    "targetAsset": "server-02",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "root",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for root from 203.0.113.11 port 50000 ssh2",
+    "sourceIp": "203.0.113.11"
+  },
+  {
+    "alertId": "ALERT-0034",
+    "scenarioId": "SCENARIO-SSH-002",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:10:26+08:00",
+    "targetIp": "10.0.0.11",
+    "targetAsset": "server-02",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "admin",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for admin from 203.0.113.11 port 50001 ssh2",
+    "sourceIp": "203.0.113.11"
+  },
+  {
+    "alertId": "ALERT-0035",
+    "scenarioId": "SCENARIO-SSH-002",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:10:53+08:00",
+    "targetIp": "10.0.0.11",
+    "targetAsset": "server-02",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "root",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for root from 203.0.113.11 port 50002 ssh2",
+    "sourceIp": "203.0.113.11"
+  },
+  {
+    "alertId": "ALERT-0036",
+    "scenarioId": "SCENARIO-SSH-002",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:11:19+08:00",
+    "targetIp": "10.0.0.11",
+    "targetAsset": "server-02",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "admin",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for admin from 203.0.113.11 port 50003 ssh2",
+    "sourceIp": "203.0.113.11"
+  },
+  {
+    "alertId": "ALERT-0037",
+    "scenarioId": "SCENARIO-SSH-002",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:11:45+08:00",
+    "targetIp": "10.0.0.11",
+    "targetAsset": "server-02",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "root",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for root from 203.0.113.11 port 50004 ssh2",
+    "sourceIp": "203.0.113.11"
+  },
+  {
+    "alertId": "ALERT-0038",
+    "scenarioId": "SCENARIO-SSH-002",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:12:12+08:00",
+    "targetIp": "10.0.0.11",
+    "targetAsset": "server-02",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "admin",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for admin from 203.0.113.11 port 50005 ssh2",
+    "sourceIp": "203.0.113.11"
+  },
+  {
+    "alertId": "ALERT-0039",
+    "scenarioId": "SCENARIO-SSH-002",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:12:38+08:00",
+    "targetIp": "10.0.0.11",
+    "targetAsset": "server-02",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "root",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for root from 203.0.113.11 port 50006 ssh2",
+    "sourceIp": "203.0.113.11"
+  },
+  {
+    "alertId": "ALERT-0040",
+    "scenarioId": "SCENARIO-SSH-002",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:13:05+08:00",
+    "targetIp": "10.0.0.11",
+    "targetAsset": "server-02",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "admin",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for admin from 203.0.113.11 port 50007 ssh2",
+    "sourceIp": "203.0.113.11"
+  },
+  {
+    "alertId": "ALERT-0041",
+    "scenarioId": "SCENARIO-SSH-002",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:13:31+08:00",
+    "targetIp": "10.0.0.11",
+    "targetAsset": "server-02",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "root",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for root from 203.0.113.11 port 50008 ssh2",
+    "sourceIp": "203.0.113.11"
+  },
+  {
+    "alertId": "ALERT-0042",
+    "scenarioId": "SCENARIO-SSH-002",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:13:57+08:00",
+    "targetIp": "10.0.0.11",
+    "targetAsset": "server-02",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "admin",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for admin from 203.0.113.11 port 50009 ssh2",
+    "sourceIp": "203.0.113.11"
+  },
+  {
+    "alertId": "ALERT-0043",
+    "scenarioId": "SCENARIO-SSH-002",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:14:24+08:00",
+    "targetIp": "10.0.0.11",
+    "targetAsset": "server-02",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "root",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for root from 203.0.113.11 port 50010 ssh2",
+    "sourceIp": "203.0.113.11"
+  },
+  {
+    "alertId": "ALERT-0044",
+    "scenarioId": "SCENARIO-SSH-002",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:14:50+08:00",
+    "targetIp": "10.0.0.11",
+    "targetAsset": "server-02",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "admin",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for admin from 203.0.113.11 port 50011 ssh2",
+    "sourceIp": "203.0.113.11"
+  },
+  {
+    "alertId": "ALERT-0045",
+    "scenarioId": "SCENARIO-SSH-003",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:20:00+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "LOW",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "ops-admin",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for ops-admin from 203.0.113.12 port 50000 ssh2",
+    "sourceIp": "203.0.113.12"
+  },
+  {
+    "alertId": "ALERT-0046",
+    "scenarioId": "SCENARIO-SSH-003",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:20:41+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "LOW",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "ops-admin",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for ops-admin from 203.0.113.12 port 50001 ssh2",
+    "sourceIp": "203.0.113.12"
+  },
+  {
+    "alertId": "ALERT-0047",
+    "scenarioId": "SCENARIO-SSH-003",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:21:23+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "LOW",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "ops-admin",
+      "action": "LOGIN_SUCCESS"
+    },
+    "rawLog": "Accepted password for ops-admin from 203.0.113.12 port 50002 ssh2",
+    "sourceIp": "203.0.113.12"
+  },
+  {
+    "alertId": "ALERT-0048",
+    "scenarioId": "SCENARIO-SSH-003",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:22:04+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "LOW",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "ops-admin",
+      "action": "LOGIN_SUCCESS"
+    },
+    "rawLog": "Accepted password for ops-admin from 203.0.113.12 port 50003 ssh2",
+    "sourceIp": "203.0.113.12"
+  },
+  {
+    "alertId": "ALERT-0049",
+    "scenarioId": "SCENARIO-SSH-003",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:22:46+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "LOW",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "ops-admin",
+      "action": "LOGIN_SUCCESS"
+    },
+    "rawLog": "Accepted password for ops-admin from 203.0.113.12 port 50004 ssh2",
+    "sourceIp": "203.0.113.12"
+  },
+  {
+    "alertId": "ALERT-0050",
+    "scenarioId": "SCENARIO-SSH-003",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:23:27+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "LOW",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "ops-admin",
+      "action": "LOGIN_SUCCESS"
+    },
+    "rawLog": "Accepted password for ops-admin from 203.0.113.12 port 50005 ssh2",
+    "sourceIp": "203.0.113.12"
+  },
+  {
+    "alertId": "ALERT-0051",
+    "scenarioId": "SCENARIO-SSH-003",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:24:09+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "LOW",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "ops-admin",
+      "action": "LOGIN_SUCCESS"
+    },
+    "rawLog": "Accepted password for ops-admin from 203.0.113.12 port 50006 ssh2",
+    "sourceIp": "203.0.113.12"
+  },
+  {
+    "alertId": "ALERT-0052",
+    "scenarioId": "SCENARIO-SSH-003",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:24:50+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "LOW",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "ops-admin",
+      "action": "LOGIN_SUCCESS"
+    },
+    "rawLog": "Accepted password for ops-admin from 203.0.113.12 port 50007 ssh2",
+    "sourceIp": "203.0.113.12"
+  },
+  {
+    "alertId": "ALERT-0053",
+    "scenarioId": "SCENARIO-SSH-004",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:30:00+08:00",
+    "targetIp": "10.0.0.12",
+    "targetAsset": "server-03",
+    "severity": "LOW",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "dba",
+      "action": "LOGIN_SUCCESS"
+    },
+    "rawLog": "Accepted password for dba from 203.0.113.13 port 50000 ssh2",
+    "sourceIp": "203.0.113.13"
+  },
+  {
+    "alertId": "ALERT-0054",
+    "scenarioId": "SCENARIO-SSH-004",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:30:58+08:00",
+    "targetIp": "10.0.0.12",
+    "targetAsset": "server-03",
+    "severity": "LOW",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "dba",
+      "action": "LOGIN_SUCCESS"
+    },
+    "rawLog": "Accepted password for dba from 203.0.113.13 port 50001 ssh2",
+    "sourceIp": "203.0.113.13"
+  },
+  {
+    "alertId": "ALERT-0055",
+    "scenarioId": "SCENARIO-SSH-004",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:31:56+08:00",
+    "targetIp": "10.0.0.12",
+    "targetAsset": "server-03",
+    "severity": "LOW",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "dba",
+      "action": "LOGIN_SUCCESS"
+    },
+    "rawLog": "Accepted password for dba from 203.0.113.13 port 50002 ssh2",
+    "sourceIp": "203.0.113.13"
+  },
+  {
+    "alertId": "ALERT-0056",
+    "scenarioId": "SCENARIO-SSH-004",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:32:54+08:00",
+    "targetIp": "10.0.0.12",
+    "targetAsset": "server-03",
+    "severity": "LOW",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "dba",
+      "action": "LOGIN_SUCCESS"
+    },
+    "rawLog": "Accepted password for dba from 203.0.113.13 port 50003 ssh2",
+    "sourceIp": "203.0.113.13"
+  },
+  {
+    "alertId": "ALERT-0057",
+    "scenarioId": "SCENARIO-SSH-004",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:33:52+08:00",
+    "targetIp": "10.0.0.12",
+    "targetAsset": "server-03",
+    "severity": "LOW",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "dba",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for dba from 203.0.113.13 port 50004 ssh2",
+    "sourceIp": "203.0.113.13"
+  },
+  {
+    "alertId": "ALERT-0058",
+    "scenarioId": "SCENARIO-SSH-004",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:34:50+08:00",
+    "targetIp": "10.0.0.12",
+    "targetAsset": "server-03",
+    "severity": "LOW",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "dba",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for dba from 203.0.113.13 port 50005 ssh2",
+    "sourceIp": "203.0.113.13"
+  },
+  {
+    "alertId": "ALERT-0059",
+    "scenarioId": "SCENARIO-SSH-005",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:40:00+08:00",
+    "targetIp": "10.0.0.11",
+    "targetAsset": "server-02",
+    "severity": "MEDIUM",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "root",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for root from UNKNOWN port 50000 ssh2"
+  },
+  {
+    "alertId": "ALERT-0060",
+    "scenarioId": "SCENARIO-SSH-006",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:50:00+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "root",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for root from 198.51.100.20 port 50000 ssh2",
+    "sourceIp": "198.51.100.20"
+  },
+  {
+    "alertId": "ALERT-0061",
+    "scenarioId": "SCENARIO-SSH-006",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:50:32+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "admin",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for admin from 198.51.100.20 port 50001 ssh2",
+    "sourceIp": "198.51.100.20"
+  },
+  {
+    "alertId": "ALERT-0062",
+    "scenarioId": "SCENARIO-SSH-006",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:51:04+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "test",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for test from 198.51.100.20 port 50002 ssh2",
+    "sourceIp": "198.51.100.20"
+  },
+  {
+    "alertId": "ALERT-0063",
+    "scenarioId": "SCENARIO-SSH-006",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:51:37+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "guest",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for guest from 198.51.100.20 port 50003 ssh2",
+    "sourceIp": "198.51.100.20"
+  },
+  {
+    "alertId": "ALERT-0064",
+    "scenarioId": "SCENARIO-SSH-006",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:52:09+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "oracle",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for oracle from 198.51.100.20 port 50004 ssh2",
+    "sourceIp": "198.51.100.20"
+  },
+  {
+    "alertId": "ALERT-0065",
+    "scenarioId": "SCENARIO-SSH-006",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:52:41+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "root",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for root from 198.51.100.20 port 50005 ssh2",
+    "sourceIp": "198.51.100.20"
+  },
+  {
+    "alertId": "ALERT-0066",
+    "scenarioId": "SCENARIO-SSH-006",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:53:13+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "admin",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for admin from 198.51.100.20 port 50006 ssh2",
+    "sourceIp": "198.51.100.20"
+  },
+  {
+    "alertId": "ALERT-0067",
+    "scenarioId": "SCENARIO-SSH-006",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:53:46+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "test",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for test from 198.51.100.20 port 50007 ssh2",
+    "sourceIp": "198.51.100.20"
+  },
+  {
+    "alertId": "ALERT-0068",
+    "scenarioId": "SCENARIO-SSH-006",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:54:18+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "guest",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for guest from 198.51.100.20 port 50008 ssh2",
+    "sourceIp": "198.51.100.20"
+  },
+  {
+    "alertId": "ALERT-0069",
+    "scenarioId": "SCENARIO-SSH-006",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T09:54:50+08:00",
+    "targetIp": "10.0.0.10",
+    "targetAsset": "server-01",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "oracle",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for oracle from 198.51.100.20 port 50009 ssh2",
+    "sourceIp": "198.51.100.20"
+  },
+  {
+    "alertId": "ALERT-0070",
+    "scenarioId": "SCENARIO-SSH-007",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T10:00:00+08:00",
+    "targetIp": "10.0.0.11",
+    "targetAsset": "server-02",
+    "severity": "MEDIUM",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "root",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for root from 198.51.100.21 port 50000 ssh2",
+    "sourceIp": "198.51.100.21"
+  },
+  {
+    "alertId": "ALERT-0071",
+    "scenarioId": "SCENARIO-SSH-007",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T10:00:58+08:00",
+    "targetIp": "10.0.0.11",
+    "targetAsset": "server-02",
+    "severity": "MEDIUM",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "admin",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for admin from 198.51.100.21 port 50001 ssh2",
+    "sourceIp": "198.51.100.21"
+  },
+  {
+    "alertId": "ALERT-0072",
+    "scenarioId": "SCENARIO-SSH-007",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T10:01:56+08:00",
+    "targetIp": "10.0.0.11",
+    "targetAsset": "server-02",
+    "severity": "MEDIUM",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "test",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for test from 198.51.100.21 port 50002 ssh2",
+    "sourceIp": "198.51.100.21"
+  },
+  {
+    "alertId": "ALERT-0073",
+    "scenarioId": "SCENARIO-SSH-007",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T10:02:54+08:00",
+    "targetIp": "10.0.0.11",
+    "targetAsset": "server-02",
+    "severity": "MEDIUM",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "guest",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for guest from 198.51.100.21 port 50003 ssh2",
+    "sourceIp": "198.51.100.21"
+  },
+  {
+    "alertId": "ALERT-0074",
+    "scenarioId": "SCENARIO-SSH-007",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T10:03:52+08:00",
+    "targetIp": "10.0.0.11",
+    "targetAsset": "server-02",
+    "severity": "MEDIUM",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "deploy",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for deploy from 198.51.100.21 port 50004 ssh2",
+    "sourceIp": "198.51.100.21"
+  },
+  {
+    "alertId": "ALERT-0075",
+    "scenarioId": "SCENARIO-SSH-007",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T10:04:50+08:00",
+    "targetIp": "10.0.0.11",
+    "targetAsset": "server-02",
+    "severity": "MEDIUM",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "root",
+      "action": "LOGIN_SUCCESS"
+    },
+    "rawLog": "Accepted password for root from 198.51.100.21 port 50005 ssh2",
+    "sourceIp": "198.51.100.21"
+  },
+  {
+    "alertId": "ALERT-0076",
+    "scenarioId": "SCENARIO-SSH-008",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T10:10:00+08:00",
+    "targetIp": "10.0.0.12",
+    "targetAsset": "server-03",
+    "severity": "LOW",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "dba",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for dba from 198.51.100.22 port 50000 ssh2",
+    "sourceIp": "198.51.100.22"
+  },
+  {
+    "alertId": "ALERT-0077",
+    "scenarioId": "SCENARIO-SSH-008",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T10:11:12+08:00",
+    "targetIp": "10.0.0.12",
+    "targetAsset": "server-03",
+    "severity": "LOW",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "dba",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for dba from 198.51.100.22 port 50001 ssh2",
+    "sourceIp": "198.51.100.22"
+  },
+  {
+    "alertId": "ALERT-0078",
+    "scenarioId": "SCENARIO-SSH-008",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T10:12:25+08:00",
+    "targetIp": "10.0.0.12",
+    "targetAsset": "server-03",
+    "severity": "LOW",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "dba",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for dba from 198.51.100.22 port 50002 ssh2",
+    "sourceIp": "198.51.100.22"
+  },
+  {
+    "alertId": "ALERT-0079",
+    "scenarioId": "SCENARIO-SSH-008",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T10:13:38+08:00",
+    "targetIp": "10.0.0.12",
+    "targetAsset": "server-03",
+    "severity": "LOW",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "dba",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for dba from 198.51.100.22 port 50003 ssh2",
+    "sourceIp": "198.51.100.22"
+  },
+  {
+    "alertId": "ALERT-0080",
+    "scenarioId": "SCENARIO-SSH-008",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T10:14:50+08:00",
+    "targetIp": "10.0.0.12",
+    "targetAsset": "server-03",
+    "severity": "LOW",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "dba",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for dba from 198.51.100.22 port 50004 ssh2",
+    "sourceIp": "198.51.100.22"
+  },
+  {
+    "alertId": "ALERT-0081",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T10:20:00+08:00",
+    "targetIp": "10.0.0.10",
+    "severity": "MEDIUM",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "root",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for root from 198.51.100.23 port 51000 ssh2 (incomplete telemetry)",
+    "targetAsset": "server-01"
+  },
+  {
+    "alertId": "ALERT-0082",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T10:21:00+08:00",
+    "sourceIp": "203.0.113.20",
+    "targetIp": "10.0.0.11",
+    "severity": "MEDIUM",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "root",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for root from 203.0.113.20 port 51000 ssh2 (incomplete telemetry)"
+  },
+  {
+    "alertId": "ALERT-0083",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T10:22:00+08:00",
+    "sourceIp": "203.0.113.21",
+    "targetIp": "10.0.0.12",
+    "severity": "MEDIUM",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "SSH",
+      "username": "root",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for root from 203.0.113.21 port 51000 ssh2 (incomplete telemetry)"
+  },
+  {
+    "alertId": "ALERT-0084",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T10:23:00+08:00",
+    "sourceIp": "192.0.2.20",
+    "targetIp": "10.0.0.11",
+    "severity": "MEDIUM",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "username": "root",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for root from 192.0.2.20 port 51000 ssh2 (incomplete telemetry)",
+    "targetAsset": "server-02"
+  },
+  {
+    "alertId": "ALERT-0085",
+    "alertType": "SSH_BRUTE_FORCE",
+    "category": "AUTHENTICATION",
+    "timestamp": "2026-11-18T10:24:00+08:00",
+    "sourceIp": "192.0.2.21",
+    "targetIp": "10.0.0.12",
+    "severity": "MEDIUM",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "username": "root",
+      "action": "LOGIN_FAILED"
+    },
+    "rawLog": "Failed password for root from 192.0.2.21 port 51000 ssh2 (incomplete telemetry)",
+    "targetAsset": "server-03"
+  },
+  {
+    "alertId": "ALERT-0086",
+    "alertType": "PORT_SCAN",
+    "category": "NETWORK",
+    "timestamp": "2026-11-18T10:30:00+08:00",
+    "sourceIp": "192.0.2.10",
+    "targetIp": "10.0.0.1",
+    "targetAsset": "fw-01",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "TCP",
+      "scannedPorts": "22,80,443,8080"
+    },
+    "rawLog": "TCP SYN scan detected from 192.0.2.10 to 10.0.0.1 on multiple ports"
+  },
+  {
+    "alertId": "ALERT-0087",
+    "alertType": "PORT_SCAN",
+    "category": "NETWORK",
+    "timestamp": "2026-11-18T10:31:00+08:00",
+    "sourceIp": "192.0.2.11",
+    "targetIp": "10.0.0.1",
+    "targetAsset": "fw-01",
+    "severity": "MEDIUM",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "TCP",
+      "scannedPorts": "22,80,443,8080"
+    },
+    "rawLog": "TCP SYN scan detected from 192.0.2.11 to 10.0.0.1 on multiple ports"
+  },
+  {
+    "alertId": "ALERT-0088",
+    "alertType": "PORT_SCAN",
+    "category": "NETWORK",
+    "timestamp": "2026-11-18T10:32:00+08:00",
+    "sourceIp": "192.0.2.12",
+    "targetIp": "10.0.0.1",
+    "targetAsset": "fw-01",
+    "severity": "LOW",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "TCP",
+      "scannedPorts": "22,80,443,8080"
+    },
+    "rawLog": "TCP SYN scan detected from 192.0.2.12 to 10.0.0.1 on multiple ports"
+  },
+  {
+    "alertId": "ALERT-0089",
+    "alertType": "PORT_SCAN",
+    "category": "NETWORK",
+    "timestamp": "2026-11-18T10:33:00+08:00",
+    "sourceIp": "192.0.2.13",
+    "targetIp": "10.0.0.1",
+    "targetAsset": "fw-01",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "TCP",
+      "scannedPorts": "22,80,443,8080"
+    },
+    "rawLog": "TCP SYN scan detected from 192.0.2.13 to 10.0.0.1 on multiple ports"
+  },
+  {
+    "alertId": "ALERT-0090",
+    "alertType": "PORT_SCAN",
+    "category": "NETWORK",
+    "timestamp": "2026-11-18T10:34:00+08:00",
+    "sourceIp": "192.0.2.14",
+    "targetIp": "10.0.0.1",
+    "targetAsset": "fw-01",
+    "severity": "MEDIUM",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "TCP",
+      "scannedPorts": "22,80,443,8080"
+    },
+    "rawLog": "TCP SYN scan detected from 192.0.2.14 to 10.0.0.1 on multiple ports"
+  },
+  {
+    "alertId": "ALERT-0091",
+    "alertType": "PORT_SCAN",
+    "category": "NETWORK",
+    "timestamp": "2026-11-18T10:35:00+08:00",
+    "sourceIp": "192.0.2.15",
+    "targetIp": "10.0.0.1",
+    "targetAsset": "fw-01",
+    "severity": "LOW",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "TCP",
+      "scannedPorts": "22,80,443,8080"
+    },
+    "rawLog": "TCP SYN scan detected from 192.0.2.15 to 10.0.0.1 on multiple ports"
+  },
+  {
+    "alertId": "ALERT-0092",
+    "alertType": "PORT_SCAN",
+    "category": "NETWORK",
+    "timestamp": "2026-11-18T10:36:00+08:00",
+    "sourceIp": "192.0.2.16",
+    "targetIp": "10.0.0.1",
+    "targetAsset": "fw-01",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "TCP",
+      "scannedPorts": "22,80,443,8080"
+    },
+    "rawLog": "TCP SYN scan detected from 192.0.2.16 to 10.0.0.1 on multiple ports"
+  },
+  {
+    "alertId": "ALERT-0093",
+    "alertType": "PORT_SCAN",
+    "category": "NETWORK",
+    "timestamp": "2026-11-18T10:37:00+08:00",
+    "sourceIp": "192.0.2.17",
+    "targetIp": "10.0.0.1",
+    "targetAsset": "fw-01",
+    "severity": "MEDIUM",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "TCP",
+      "scannedPorts": "22,80,443,8080"
+    },
+    "rawLog": "TCP SYN scan detected from 192.0.2.17 to 10.0.0.1 on multiple ports"
+  },
+  {
+    "alertId": "ALERT-0094",
+    "alertType": "PORT_SCAN",
+    "category": "NETWORK",
+    "timestamp": "2026-11-18T10:38:00+08:00",
+    "sourceIp": "192.0.2.18",
+    "targetIp": "10.0.0.1",
+    "targetAsset": "fw-01",
+    "severity": "LOW",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "TCP",
+      "scannedPorts": "22,80,443,8080"
+    },
+    "rawLog": "TCP SYN scan detected from 192.0.2.18 to 10.0.0.1 on multiple ports"
+  },
+  {
+    "alertId": "ALERT-0095",
+    "alertType": "PORT_SCAN",
+    "category": "NETWORK",
+    "timestamp": "2026-11-18T10:39:00+08:00",
+    "sourceIp": "192.0.2.19",
+    "targetIp": "10.0.0.1",
+    "targetAsset": "fw-01",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "TCP",
+      "scannedPorts": "22,80,443,8080"
+    },
+    "rawLog": "TCP SYN scan detected from 192.0.2.19 to 10.0.0.1 on multiple ports"
+  },
+  {
+    "alertId": "ALERT-0096",
+    "alertType": "PORT_SCAN",
+    "category": "NETWORK",
+    "timestamp": "2026-11-18T10:40:00+08:00",
+    "sourceIp": "192.0.2.20",
+    "targetIp": "10.0.0.1",
+    "targetAsset": "fw-01",
+    "severity": "MEDIUM",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "TCP",
+      "scannedPorts": "22,80,443,8080"
+    },
+    "rawLog": "TCP SYN scan detected from 192.0.2.20 to 10.0.0.1 on multiple ports"
+  },
+  {
+    "alertId": "ALERT-0097",
+    "alertType": "PORT_SCAN",
+    "category": "NETWORK",
+    "timestamp": "2026-11-18T10:41:00+08:00",
+    "sourceIp": "192.0.2.21",
+    "targetIp": "10.0.0.1",
+    "targetAsset": "fw-01",
+    "severity": "LOW",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "TCP",
+      "scannedPorts": "22,80,443,8080"
+    },
+    "rawLog": "TCP SYN scan detected from 192.0.2.21 to 10.0.0.1 on multiple ports"
+  },
+  {
+    "alertId": "ALERT-0098",
+    "alertType": "PORT_SCAN",
+    "category": "NETWORK",
+    "timestamp": "2026-11-18T10:42:00+08:00",
+    "sourceIp": "192.0.2.22",
+    "targetIp": "10.0.0.1",
+    "targetAsset": "fw-01",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "TCP",
+      "scannedPorts": "22,80,443,8080"
+    },
+    "rawLog": "TCP SYN scan detected from 192.0.2.22 to 10.0.0.1 on multiple ports"
+  },
+  {
+    "alertId": "ALERT-0099",
+    "alertType": "PORT_SCAN",
+    "category": "NETWORK",
+    "timestamp": "2026-11-18T10:43:00+08:00",
+    "sourceIp": "192.0.2.23",
+    "targetIp": "10.0.0.1",
+    "targetAsset": "fw-01",
+    "severity": "MEDIUM",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "TCP",
+      "scannedPorts": "22,80,443,8080"
+    },
+    "rawLog": "TCP SYN scan detected from 192.0.2.23 to 10.0.0.1 on multiple ports"
+  },
+  {
+    "alertId": "ALERT-0100",
+    "alertType": "PORT_SCAN",
+    "category": "NETWORK",
+    "timestamp": "2026-11-18T10:44:00+08:00",
+    "sourceIp": "192.0.2.24",
+    "targetIp": "10.0.0.1",
+    "targetAsset": "fw-01",
+    "severity": "LOW",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "TCP",
+      "scannedPorts": "22,80,443,8080"
+    },
+    "rawLog": "TCP SYN scan detected from 192.0.2.24 to 10.0.0.1 on multiple ports"
+  },
+  {
+    "alertId": "ALERT-0101",
+    "alertType": "SQL_INJECTION",
+    "category": "WEB_ATTACK",
+    "timestamp": "2026-11-18T10:45:00+08:00",
+    "sourceIp": "198.51.100.10",
+    "targetIp": "10.0.0.20",
+    "targetAsset": "web-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "HTTP",
+      "payload": "' OR 1=1--",
+      "uri": "/api/login"
+    },
+    "rawLog": "WAF blocked SQL injection pattern from 198.51.100.10 on /api/login"
+  },
+  {
+    "alertId": "ALERT-0102",
+    "alertType": "SQL_INJECTION",
+    "category": "WEB_ATTACK",
+    "timestamp": "2026-11-18T10:46:00+08:00",
+    "sourceIp": "198.51.100.11",
+    "targetIp": "10.0.0.20",
+    "targetAsset": "web-01",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "HTTP",
+      "payload": "' OR 1=1--",
+      "uri": "/api/login"
+    },
+    "rawLog": "WAF blocked SQL injection pattern from 198.51.100.11 on /api/login"
+  },
+  {
+    "alertId": "ALERT-0103",
+    "alertType": "SQL_INJECTION",
+    "category": "WEB_ATTACK",
+    "timestamp": "2026-11-18T10:47:00+08:00",
+    "sourceIp": "198.51.100.12",
+    "targetIp": "10.0.0.20",
+    "targetAsset": "web-01",
+    "severity": "MEDIUM",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "HTTP",
+      "payload": "' OR 1=1--",
+      "uri": "/api/login"
+    },
+    "rawLog": "WAF blocked SQL injection pattern from 198.51.100.12 on /api/login"
+  },
+  {
+    "alertId": "ALERT-0104",
+    "alertType": "SQL_INJECTION",
+    "category": "WEB_ATTACK",
+    "timestamp": "2026-11-18T10:48:00+08:00",
+    "sourceIp": "198.51.100.13",
+    "targetIp": "10.0.0.20",
+    "targetAsset": "web-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "HTTP",
+      "payload": "' OR 1=1--",
+      "uri": "/api/login"
+    },
+    "rawLog": "WAF blocked SQL injection pattern from 198.51.100.13 on /api/login"
+  },
+  {
+    "alertId": "ALERT-0105",
+    "alertType": "SQL_INJECTION",
+    "category": "WEB_ATTACK",
+    "timestamp": "2026-11-18T10:49:00+08:00",
+    "sourceIp": "198.51.100.14",
+    "targetIp": "10.0.0.20",
+    "targetAsset": "web-01",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "HTTP",
+      "payload": "' OR 1=1--",
+      "uri": "/api/login"
+    },
+    "rawLog": "WAF blocked SQL injection pattern from 198.51.100.14 on /api/login"
+  },
+  {
+    "alertId": "ALERT-0106",
+    "alertType": "SQL_INJECTION",
+    "category": "WEB_ATTACK",
+    "timestamp": "2026-11-18T10:50:00+08:00",
+    "sourceIp": "198.51.100.15",
+    "targetIp": "10.0.0.20",
+    "targetAsset": "web-01",
+    "severity": "MEDIUM",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "HTTP",
+      "payload": "' OR 1=1--",
+      "uri": "/api/login"
+    },
+    "rawLog": "WAF blocked SQL injection pattern from 198.51.100.15 on /api/login"
+  },
+  {
+    "alertId": "ALERT-0107",
+    "alertType": "SQL_INJECTION",
+    "category": "WEB_ATTACK",
+    "timestamp": "2026-11-18T10:51:00+08:00",
+    "sourceIp": "198.51.100.16",
+    "targetIp": "10.0.0.20",
+    "targetAsset": "web-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "HTTP",
+      "payload": "' OR 1=1--",
+      "uri": "/api/login"
+    },
+    "rawLog": "WAF blocked SQL injection pattern from 198.51.100.16 on /api/login"
+  },
+  {
+    "alertId": "ALERT-0108",
+    "alertType": "SQL_INJECTION",
+    "category": "WEB_ATTACK",
+    "timestamp": "2026-11-18T10:52:00+08:00",
+    "sourceIp": "198.51.100.17",
+    "targetIp": "10.0.0.20",
+    "targetAsset": "web-01",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "HTTP",
+      "payload": "' OR 1=1--",
+      "uri": "/api/login"
+    },
+    "rawLog": "WAF blocked SQL injection pattern from 198.51.100.17 on /api/login"
+  },
+  {
+    "alertId": "ALERT-0109",
+    "alertType": "SQL_INJECTION",
+    "category": "WEB_ATTACK",
+    "timestamp": "2026-11-18T10:53:00+08:00",
+    "sourceIp": "198.51.100.18",
+    "targetIp": "10.0.0.20",
+    "targetAsset": "web-01",
+    "severity": "MEDIUM",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "HTTP",
+      "payload": "' OR 1=1--",
+      "uri": "/api/login"
+    },
+    "rawLog": "WAF blocked SQL injection pattern from 198.51.100.18 on /api/login"
+  },
+  {
+    "alertId": "ALERT-0110",
+    "alertType": "SQL_INJECTION",
+    "category": "WEB_ATTACK",
+    "timestamp": "2026-11-18T10:54:00+08:00",
+    "sourceIp": "198.51.100.19",
+    "targetIp": "10.0.0.20",
+    "targetAsset": "web-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "HTTP",
+      "payload": "' OR 1=1--",
+      "uri": "/api/login"
+    },
+    "rawLog": "WAF blocked SQL injection pattern from 198.51.100.19 on /api/login"
+  },
+  {
+    "alertId": "ALERT-0111",
+    "alertType": "SQL_INJECTION",
+    "category": "WEB_ATTACK",
+    "timestamp": "2026-11-18T10:55:00+08:00",
+    "sourceIp": "198.51.100.20",
+    "targetIp": "10.0.0.20",
+    "targetAsset": "web-01",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "HTTP",
+      "payload": "' OR 1=1--",
+      "uri": "/api/login"
+    },
+    "rawLog": "WAF blocked SQL injection pattern from 198.51.100.20 on /api/login"
+  },
+  {
+    "alertId": "ALERT-0112",
+    "alertType": "SQL_INJECTION",
+    "category": "WEB_ATTACK",
+    "timestamp": "2026-11-18T10:56:00+08:00",
+    "sourceIp": "198.51.100.21",
+    "targetIp": "10.0.0.20",
+    "targetAsset": "web-01",
+    "severity": "MEDIUM",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "HTTP",
+      "payload": "' OR 1=1--",
+      "uri": "/api/login"
+    },
+    "rawLog": "WAF blocked SQL injection pattern from 198.51.100.21 on /api/login"
+  },
+  {
+    "alertId": "ALERT-0113",
+    "alertType": "SQL_INJECTION",
+    "category": "WEB_ATTACK",
+    "timestamp": "2026-11-18T10:57:00+08:00",
+    "sourceIp": "198.51.100.22",
+    "targetIp": "10.0.0.20",
+    "targetAsset": "web-01",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "HTTP",
+      "payload": "' OR 1=1--",
+      "uri": "/api/login"
+    },
+    "rawLog": "WAF blocked SQL injection pattern from 198.51.100.22 on /api/login"
+  },
+  {
+    "alertId": "ALERT-0114",
+    "alertType": "SQL_INJECTION",
+    "category": "WEB_ATTACK",
+    "timestamp": "2026-11-18T10:58:00+08:00",
+    "sourceIp": "198.51.100.23",
+    "targetIp": "10.0.0.20",
+    "targetAsset": "web-01",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "HTTP",
+      "payload": "' OR 1=1--",
+      "uri": "/api/login"
+    },
+    "rawLog": "WAF blocked SQL injection pattern from 198.51.100.23 on /api/login"
+  },
+  {
+    "alertId": "ALERT-0115",
+    "alertType": "SQL_INJECTION",
+    "category": "WEB_ATTACK",
+    "timestamp": "2026-11-18T10:59:00+08:00",
+    "sourceIp": "198.51.100.24",
+    "targetIp": "10.0.0.20",
+    "targetAsset": "web-01",
+    "severity": "MEDIUM",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "protocol": "HTTP",
+      "payload": "' OR 1=1--",
+      "uri": "/api/login"
+    },
+    "rawLog": "WAF blocked SQL injection pattern from 198.51.100.24 on /api/login"
+  },
+  {
+    "alertId": "ALERT-0116",
+    "alertType": "MALWARE_ACTIVITY",
+    "category": "HOST_SECURITY",
+    "timestamp": "2026-11-18T11:00:00+08:00",
+    "sourceIp": "203.0.113.10",
+    "targetIp": "10.0.0.23",
+    "targetAsset": "pc-023",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "processName": "suspicious.exe",
+      "action": "DETECTED"
+    },
+    "rawLog": "EDR detected suspicious process on pc-023: suspicious.exe"
+  },
+  {
+    "alertId": "ALERT-0117",
+    "alertType": "MALWARE_ACTIVITY",
+    "category": "HOST_SECURITY",
+    "timestamp": "2026-11-18T11:01:00+08:00",
+    "sourceIp": "203.0.113.11",
+    "targetIp": "10.0.0.23",
+    "targetAsset": "pc-023",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "processName": "suspicious.exe",
+      "action": "DETECTED"
+    },
+    "rawLog": "EDR detected suspicious process on pc-023: suspicious.exe"
+  },
+  {
+    "alertId": "ALERT-0118",
+    "alertType": "MALWARE_ACTIVITY",
+    "category": "HOST_SECURITY",
+    "timestamp": "2026-11-18T11:02:00+08:00",
+    "sourceIp": "203.0.113.12",
+    "targetIp": "10.0.0.23",
+    "targetAsset": "pc-023",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "processName": "suspicious.exe",
+      "action": "DETECTED"
+    },
+    "rawLog": "EDR detected suspicious process on pc-023: suspicious.exe"
+  },
+  {
+    "alertId": "ALERT-0119",
+    "alertType": "MALWARE_ACTIVITY",
+    "category": "HOST_SECURITY",
+    "timestamp": "2026-11-18T11:03:00+08:00",
+    "sourceIp": "203.0.113.13",
+    "targetIp": "10.0.0.23",
+    "targetAsset": "pc-023",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "processName": "suspicious.exe",
+      "action": "DETECTED"
+    },
+    "rawLog": "EDR detected suspicious process on pc-023: suspicious.exe"
+  },
+  {
+    "alertId": "ALERT-0120",
+    "alertType": "MALWARE_ACTIVITY",
+    "category": "HOST_SECURITY",
+    "timestamp": "2026-11-18T11:04:00+08:00",
+    "sourceIp": "203.0.113.14",
+    "targetIp": "10.0.0.23",
+    "targetAsset": "pc-023",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "processName": "suspicious.exe",
+      "action": "DETECTED"
+    },
+    "rawLog": "EDR detected suspicious process on pc-023: suspicious.exe"
+  },
+  {
+    "alertId": "ALERT-0121",
+    "alertType": "MALWARE_ACTIVITY",
+    "category": "HOST_SECURITY",
+    "timestamp": "2026-11-18T11:05:00+08:00",
+    "sourceIp": "203.0.113.15",
+    "targetIp": "10.0.0.23",
+    "targetAsset": "pc-023",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "processName": "suspicious.exe",
+      "action": "DETECTED"
+    },
+    "rawLog": "EDR detected suspicious process on pc-023: suspicious.exe"
+  },
+  {
+    "alertId": "ALERT-0122",
+    "alertType": "MALWARE_ACTIVITY",
+    "category": "HOST_SECURITY",
+    "timestamp": "2026-11-18T11:06:00+08:00",
+    "sourceIp": "203.0.113.16",
+    "targetIp": "10.0.0.23",
+    "targetAsset": "pc-023",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "processName": "suspicious.exe",
+      "action": "DETECTED"
+    },
+    "rawLog": "EDR detected suspicious process on pc-023: suspicious.exe"
+  },
+  {
+    "alertId": "ALERT-0123",
+    "alertType": "MALWARE_ACTIVITY",
+    "category": "HOST_SECURITY",
+    "timestamp": "2026-11-18T11:07:00+08:00",
+    "sourceIp": "203.0.113.17",
+    "targetIp": "10.0.0.23",
+    "targetAsset": "pc-023",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "processName": "suspicious.exe",
+      "action": "DETECTED"
+    },
+    "rawLog": "EDR detected suspicious process on pc-023: suspicious.exe"
+  },
+  {
+    "alertId": "ALERT-0124",
+    "alertType": "MALWARE_ACTIVITY",
+    "category": "HOST_SECURITY",
+    "timestamp": "2026-11-18T11:08:00+08:00",
+    "sourceIp": "203.0.113.18",
+    "targetIp": "10.0.0.23",
+    "targetAsset": "pc-023",
+    "severity": "CRITICAL",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "processName": "suspicious.exe",
+      "action": "DETECTED"
+    },
+    "rawLog": "EDR detected suspicious process on pc-023: suspicious.exe"
+  },
+  {
+    "alertId": "ALERT-0125",
+    "alertType": "MALWARE_ACTIVITY",
+    "category": "HOST_SECURITY",
+    "timestamp": "2026-11-18T11:09:00+08:00",
+    "sourceIp": "203.0.113.19",
+    "targetIp": "10.0.0.23",
+    "targetAsset": "pc-023",
+    "severity": "HIGH",
+    "sourceSystem": "SIMULATED_SIEM",
+    "attributes": {
+      "processName": "suspicious.exe",
+      "action": "DETECTED"
+    },
+    "rawLog": "EDR detected suspicious process on pc-023: suspicious.exe"
+  }
+]

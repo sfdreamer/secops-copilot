@@ -1,0 +1,29 @@
+[
+  {
+    "ticketId": "CHG-20261118-001",
+    "targetAsset": "server-01",
+    "operator": "ops-admin",
+    "startTime": "2026-11-18T09:18:00+08:00",
+    "endTime": "2026-11-18T09:25:00+08:00",
+    "status": "APPROVED",
+    "description": "计划内 SSH 证书轮换与巡检"
+  },
+  {
+    "ticketId": "CHG-20261118-002",
+    "targetAsset": "server-02",
+    "operator": "net-admin",
+    "startTime": "2026-11-18T09:58:00+08:00",
+    "endTime": "2026-11-18T10:04:00+08:00",
+    "status": "CANCELLED",
+    "description": "已取消的防火墙维护窗口"
+  },
+  {
+    "ticketId": "CHG-20261118-003",
+    "targetAsset": "web-01",
+    "operator": "web-admin",
+    "startTime": "2026-11-18T10:40:00+08:00",
+    "endTime": "2026-11-18T10:55:00+08:00",
+    "status": "COMPLETED",
+    "description": "Web 应用版本发布"
+  }
+]

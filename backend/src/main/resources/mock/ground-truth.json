@@ -1,0 +1,56 @@
+[
+  {
+    "scenarioId": "SCENARIO-SSH-001",
+    "expectedLabel": "ATTACK",
+    "expectedToolPlan": [
+      "query_login_history"
+    ],
+    "notes": "短时间高频登录失败且失败后出现成功登录，目标资产公网暴露"
+  },
+  {
+    "scenarioId": "SCENARIO-SSH-002",
+    "expectedLabel": "ATTACK",
+    "expectedToolPlan": [
+      "query_login_history"
+    ],
+    "notes": "持续登录失败，无明显成功登录，资产公网暴露"
+  },
+  {
+    "scenarioId": "SCENARIO-SSH-003",
+    "expectedLabel": "BENIGN",
+    "expectedToolPlan": [],
+    "notes": "授权运维窗口内的少量输错后正常登录，存在已审批运维单"
+  },
+  {
+    "scenarioId": "SCENARIO-SSH-004",
+    "expectedLabel": "BENIGN",
+    "expectedToolPlan": [],
+    "notes": "少量密码输错，无失败后成功序列，资产未公网暴露"
+  },
+  {
+    "scenarioId": "SCENARIO-SSH-005",
+    "expectedLabel": "UNCERTAIN",
+    "expectedToolPlan": [],
+    "notes": "缺少来源 IP，聚合关键字段不完整，单独成事件"
+  },
+  {
+    "scenarioId": "SCENARIO-SSH-006",
+    "expectedLabel": "ATTACK",
+    "expectedToolPlan": [
+      "query_login_history"
+    ],
+    "notes": "多用户名尝试，公网暴露资产，未出现成功登录"
+  },
+  {
+    "scenarioId": "SCENARIO-SSH-007",
+    "expectedLabel": "UNCERTAIN",
+    "expectedToolPlan": [],
+    "notes": "失败后出现成功登录但证据有限，需人工复核"
+  },
+  {
+    "scenarioId": "SCENARIO-SSH-008",
+    "expectedLabel": "BENIGN",
+    "expectedToolPlan": [],
+    "notes": "单一用户少量失败，非公网资产，历史登录可信"
+  }
+]

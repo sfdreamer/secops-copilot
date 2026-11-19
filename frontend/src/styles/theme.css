@@ -1,0 +1,211 @@
+:root {
+  --soc-bg: #040b16;
+  --soc-bg-soft: #071324;
+  --soc-panel: rgba(13, 27, 46, 0.82);
+  --soc-panel-solid: #0d1b2e;
+  --soc-panel-hover: rgba(19, 38, 63, 0.9);
+  --soc-border: #16324f;
+  --soc-border-bright: rgba(56, 198, 241, 0.38);
+  --soc-text: #e8f2ff;
+  --soc-muted: #7e9ab8;
+  --soc-faint: #54708e;
+  --soc-accent: #38c6f1;
+  --soc-accent-deep: #1b9fd6;
+  --soc-green: #3ddc97;
+  --soc-amber: #f5b544;
+  --soc-orange: #ff9f43;
+  --soc-yellow: #f5d544;
+  --soc-red: #ff5c74;
+  --soc-purple: #9a8cff;
+  --soc-glow: 0 0 18px rgba(56, 198, 241, 0.22);
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(1200px 620px at 80% -12%, rgba(56, 198, 241, 0.13), transparent 62%),
+    radial-gradient(900px 500px at -10% 110%, rgba(27, 159, 214, 0.08), transparent 60%),
+    linear-gradient(180deg, #040b16 0%, #071324 100%);
+  background-attachment: fixed;
+  color: var(--soc-text);
+  font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 全局网格纹理，营造科技感 */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(56, 198, 241, 0.028) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 198, 241, 0.028) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(ellipse 90% 70% at 50% 0%, black 30%, transparent 100%);
+  z-index: 0;
+}
+
+#app {
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.mono {
+  font-family: 'JetBrains Mono', 'Cascadia Code', Consolas, 'Courier New', monospace;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.2px;
+}
+
+/* ---------- Element Plus 深色覆写 ---------- */
+.el-table {
+  --el-table-bg-color: transparent;
+  --el-table-tr-bg-color: transparent;
+  --el-table-header-bg-color: rgba(10, 23, 41, 0.9);
+  --el-table-header-text-color: var(--soc-muted);
+  --el-table-text-color: var(--soc-text);
+  --el-table-border-color: var(--soc-border);
+  --el-table-row-hover-bg-color: rgba(56, 198, 241, 0.06);
+  --el-table-current-row-bg-color: rgba(56, 198, 241, 0.1);
+  background: transparent;
+  font-size: 13px;
+}
+.el-table th.el-table__cell {
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+.el-table .el-table__cell {
+  padding: 11px 0;
+}
+
+.el-pagination {
+  --el-pagination-bg-color: rgba(13, 27, 46, 0.8);
+  --el-pagination-button-disabled-bg-color: rgba(13, 27, 46, 0.4);
+  --el-pagination-hover-color: var(--soc-accent);
+  --el-pagination-text-color: var(--soc-muted);
+  --el-pagination-button-color: var(--soc-muted);
+}
+
+.el-input,
+.el-select {
+  --el-input-bg-color: rgba(8, 20, 36, 0.85);
+  --el-input-border-color: var(--soc-border);
+  --el-input-hover-border-color: var(--soc-border-bright);
+  --el-input-focus-border-color: var(--soc-accent);
+  --el-input-text-color: var(--soc-text);
+  --el-input-placeholder-color: var(--soc-faint);
+  --el-select-border-color-hover: var(--soc-border-bright);
+}
+
+.el-popper.is-light,
+.el-select__popper.el-popper {
+  --el-bg-color-overlay: #0d1b2e;
+  --el-border-color-light: var(--soc-border);
+  --el-text-color-primary: var(--soc-text);
+  --el-fill-color-light: rgba(56, 198, 241, 0.12);
+  background: #0d1b2e;
+  border: 1px solid var(--soc-border);
+}
+
+.el-dialog {
+  --el-dialog-bg-color: #0c1930;
+  --el-dialog-title-font-size: 15px;
+  border: 1px solid var(--soc-border-bright);
+  border-radius: 14px;
+  box-shadow: 0 0 40px rgba(56, 198, 241, 0.12), 0 24px 60px rgba(0, 0, 0, 0.5);
+}
+
+.el-drawer {
+  --el-drawer-bg-color: #0a1626;
+  border-left: 1px solid var(--soc-border-bright);
+}
+
+.el-overlay {
+  backdrop-filter: blur(3px);
+}
+
+.el-button {
+  --el-button-bg-color: rgba(56, 198, 241, 0.1);
+  --el-button-border-color: var(--soc-border);
+  --el-button-text-color: var(--soc-text);
+  --el-button-hover-bg-color: rgba(56, 198, 241, 0.18);
+  --el-button-hover-border-color: var(--soc-accent);
+  --el-button-hover-text-color: var(--soc-accent);
+}
+
+.el-button--primary {
+  --el-button-bg-color: linear-gradient(135deg, #1b9fd6, #38c6f1);
+  --el-button-border-color: transparent;
+  --el-button-text-color: #04121f;
+  background: linear-gradient(135deg, #1b9fd6, #38c6f1);
+  border: none;
+  font-weight: 700;
+}
+.el-button--primary:hover {
+  --el-button-hover-bg-color: linear-gradient(135deg, #38c6f1, #6ee7ff);
+  --el-button-hover-text-color: #04121f;
+  background: linear-gradient(135deg, #38c6f1, #6ee7ff);
+  box-shadow: 0 0 18px rgba(56, 198, 241, 0.4);
+}
+
+.el-tag {
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.el-message-box {
+  --el-messagebox-title-color: var(--soc-text);
+  --el-messagebox-content-color: var(--soc-muted);
+  background: #0c1930;
+  border: 1px solid var(--soc-border-bright);
+}
+
+.el-alert {
+  --el-alert-bg-color: rgba(255, 92, 116, 0.1);
+}
+
+.el-loading-mask {
+  --el-mask-color: rgba(4, 11, 22, 0.72);
+}
+
+.el-form-item__label {
+  color: var(--soc-muted);
+}
+
+.el-radio-button__inner {
+  background: rgba(8, 20, 36, 0.85);
+  border-color: var(--soc-border) !important;
+  color: var(--soc-muted);
+}
+.el-radio-button__original-radio:checked + .el-radio-button__inner {
+  background: rgba(56, 198, 241, 0.16);
+  border-color: var(--soc-accent) !important;
+  color: var(--soc-accent);
+  box-shadow: -1px 0 0 0 var(--soc-accent);
+}
+
+/* 滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(56, 198, 241, 0.22);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(56, 198, 241, 0.4);
+}

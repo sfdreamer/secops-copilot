@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: secops-copilot
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+    deserialization:
+      fail-on-unknown-properties: false
+
+server:
+  port: 8080
+
+app:
+  fixtures:
+    alerts-path: classpath:mock/alerts.json
+    ground-truth-path: classpath:mock/ground-truth.json
+  model:
+    # 接入方式：dashscope（阿里云百炼原生协议）| openai-compatible（硅基流动 / 轨迹流动等 OpenAI 兼容平台）
+    provider: openai-compatible
+    # 密钥环境变量候选名（逗号分隔，按优先级）；只保存变量名，绝不保存密钥值
+    # 主名 SECOPS_API_KEY（用户当前配置）；SECOPS_COPILOT_API_KEY 为历史兼容别名
+    api-key-env: SECOPS_API_KEY,SECOPS_COPILOT_API_KEY
+    # OpenAI 兼容平台地址；协议为 POST {base-url}/chat/completions，Bearer 鉴权
+    base-url: https://api.siliconflow.cn/v1
+    # 选型：Qwen3 指令版，Function Calling 稳定、输出严格 JSON 无思维链、MoE 响应快
+    # 备选：Qwen/Qwen2.5-72B-Instruct（同样已实测通过）
+    name: Qwen/Qwen3-30B-A3B-Instruct-2507
+    function-calling-enabled: true
+  agent:
+    max-tool-rounds: 2
+    max-tool-calls: 4
+    tool-timeout-ms: 3000
+    # 实测平台响应抖动：30s 下 Qwen3-30B-A3B 集成测试出现 29.4s 通过 / 33.0s 超时。
+    # 放宽到 45s 仍小于前端研判请求 60s 与 Nginx proxy_read_timeout 90s。
+    total-timeout-ms: 45000
+
+logging:
+  level:
+    com.secops: INFO

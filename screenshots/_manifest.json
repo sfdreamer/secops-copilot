@@ -1,0 +1,44 @@
+[
+  {
+    "file": "01_安全态势总览_dashboard.png",
+    "url": "/dashboard",
+    "width": 1440,
+    "height": 1404,
+    "kb": 338.9
+  },
+  {
+    "file": "02_告警与事件_alerts.png",
+    "url": "/alerts",
+    "width": 1440,
+    "height": 1557,
+    "kb": 352.8
+  },
+  {
+    "file": "03_事件详情与研判_incident.png",
+    "url": "/incidents/INC-ca57ed0c-160e-3e49-86b2-fd9425b317b0",
+    "width": 1440,
+    "height": 1474,
+    "kb": 298.3
+  },
+  {
+    "file": "04_审核记录_reviews.png",
+    "url": "/reviews",
+    "width": 1440,
+    "height": 900,
+    "kb": 161.5
+  },
+  {
+    "file": "05_效果评估_evaluation.png",
+    "url": "/evaluation",
+    "width": 1440,
+    "height": 1300,
+    "kb": 272.5
+  },
+  {
+    "file": "06_系统状态_status.png",
+    "url": "/status",
+    "width": 1440,
+    "height": 900,
+    "kb": 231.6
+  }
+]

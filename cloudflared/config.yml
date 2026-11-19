@@ -1,0 +1,7 @@
+tunnel: a3a612ae-94e7-40aa-b5fd-ddcce01645b8
+credentials-file: /etc/cloudflared/credentials.json
+
+ingress:
+  - hostname: secops.eu.cc
+    service: http://frontend:80
+  - service: http_status:404

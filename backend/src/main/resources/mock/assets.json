@@ -1,0 +1,50 @@
+[
+  {
+    "assetId": "ASSET-01",
+    "assetName": "server-01",
+    "ipAddress": "10.0.0.10",
+    "publicExposure": true,
+    "assetCriticality": "HIGH",
+    "owner": "ops-team"
+  },
+  {
+    "assetId": "ASSET-02",
+    "assetName": "server-02",
+    "ipAddress": "10.0.0.11",
+    "publicExposure": true,
+    "assetCriticality": "MEDIUM",
+    "owner": "ops-team"
+  },
+  {
+    "assetId": "ASSET-03",
+    "assetName": "server-03",
+    "ipAddress": "10.0.0.12",
+    "publicExposure": false,
+    "assetCriticality": "HIGH",
+    "owner": "db-team"
+  },
+  {
+    "assetId": "ASSET-04",
+    "assetName": "fw-01",
+    "ipAddress": "10.0.0.1",
+    "publicExposure": true,
+    "assetCriticality": "MEDIUM",
+    "owner": "net-team"
+  },
+  {
+    "assetId": "ASSET-05",
+    "assetName": "web-01",
+    "ipAddress": "10.0.0.20",
+    "publicExposure": true,
+    "assetCriticality": "HIGH",
+    "owner": "web-team"
+  },
+  {
+    "assetId": "ASSET-06",
+    "assetName": "pc-023",
+    "ipAddress": "10.0.0.23",
+    "publicExposure": false,
+    "assetCriticality": "LOW",
+    "owner": "office"
+  }
+]

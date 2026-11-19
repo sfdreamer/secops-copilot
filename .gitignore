@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.playwright-cli/
+.workbuddy/
+tmp/
+target/
+.env
+.env.local
+cloudflared/*.json
+cloudflared/*.pem
+*.log
+.idea/
+.vscode/
+.DS_Store
+*.class
+*.tsbuildinfo

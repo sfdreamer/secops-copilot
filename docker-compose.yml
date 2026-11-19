@@ -1,0 +1,79 @@
+name: secops-copilot
+
+# SecOps Copilot V1.3 · 单机 Demo 部署
+#   Web 入口 : https://secops.eu.cc 或 http://127.0.0.1:8080
+#   后端调试 : http://127.0.0.1:8081/api/health（仅本机，无需暴露）
+# 如需改端口，只改下面的宿主机端口即可，容器内端口保持 80 / 8080 不变。
+# 首次启动：docker compose up -d --build（需联网拉取基础镜像与 Maven/npm 依赖）。
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    image: secops-copilot/backend:0.1.0
+    container_name: secops-backend
+    restart: unless-stopped
+    environment:
+      TZ: Asia/Shanghai
+      # 密钥唯一来源：宿主机环境变量或项目根目录 .env（已被 .gitignore 忽略）。
+      # 绝不写入镜像、compose 文件、Git 或日志；未配置时 /api/health 返回
+      # modelConfigured=false，告警/事件/规则结果仍可查看。
+      SECOPS_API_KEY: ${SECOPS_API_KEY:-}
+      # 兼容本机已配置的旧环境变量；后端按 application.yml 中的优先级读取。
+      SECOPS_COPILOT_API_KEY: ${SECOPS_COPILOT_API_KEY:-}
+    ports:
+      - "127.0.0.1:8081:8080"
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://127.0.0.1:8080/api/health | grep -q 'status.*UP' || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 40s
+    networks:
+      - secops-net
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: secops-copilot/frontend:0.1.0
+    container_name: secops-frontend
+    restart: unless-stopped
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:8080:80"
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O /dev/null http://127.0.0.1/ || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+    networks:
+      - secops-net
+
+  cloudflared:
+    # 本机管理的 Tunnel；凭据文件只从宿主机只读挂载，不进入仓库或镜像。
+    image: cloudflare/cloudflared:latest
+    container_name: secops-cloudflared
+    restart: unless-stopped
+    command: tunnel --no-autoupdate --config /etc/cloudflared/config.yml run
+    volumes:
+      - type: bind
+        source: ./cloudflared/config.yml
+        target: /etc/cloudflared/config.yml
+        read_only: true
+      - type: bind
+        source: ${USERPROFILE}/.cloudflared/a3a612ae-94e7-40aa-b5fd-ddcce01645b8.json
+        target: /etc/cloudflared/credentials.json
+        read_only: true
+    depends_on:
+      frontend:
+        condition: service_healthy
+    networks:
+      - secops-net
+
+networks:
+  secops-net:
+    driver: bridge
